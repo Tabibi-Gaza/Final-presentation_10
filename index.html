@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>طبيبي — TABIBI | عرض تقديمي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="deck" id="deck">
+
+  <!-- ============ SLIDE 1 — COVER ============ -->
+  <section class="slide slide--cover" data-slide>
+    <div class="cover-mesh"></div>
+    <div class="pulse-wrap">
+      <svg viewBox="0 0 1000 90" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="pulseGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#0EA5A4"/>
+            <stop offset="100%" stop-color="#FF6B57"/>
+          </linearGradient>
+        </defs>
+        <path class="pulse-line" d="M0,45 L160,45 L195,45 L215,10 L240,80 L262,45 L300,45 L500,45 L525,45 L545,15 L568,75 L590,45 L630,45 L1000,45"/>
+      </svg>
+    </div>
+    <div class="slide-inner">
+      <div class="cover-logo reveal" style="--d:0"><span><img src="image/logoHorizontal.svg" width="72" height="72" alt="طبيبي"></span></div>
+      <span class="cover-kicker reveal" style="--d:100">TAQAT IT INCUBATOR — FINAL PROJECT REPORT</span>
+      <h1 class="cover-title-ar reveal" style="--d:200">Tabibi</h1>
+      <p class="cover-desc reveal" style="--d:320">منصة رقمية متكاملة تساعد العيادات الخاصة على إدارة المواعيد والسجلات والوصفات في مكان واحد.</p>
+    </div>
+    <div class="cover-foot reveal" style="--d:420">
+      <span>منصة إدارة العيادات · <strong>Clinic Management Platform</strong></span>
+      <span>2026</span>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 2 — PROBLEM ============ -->
+  <section class="slide" data-slide>
+    <div class="slide-inner">
+      <span class="eyebrow reveal" style="--d:0">المشكلة</span>
+      <h2 class="slide-title reveal" style="--d:80">الفوضى الخفية <span class="accent">داخل كل عيادة</span></h2>
+      <p class="slide-sub reveal" style="--d:140">الطبيب يقضي وقته في الأوراق، لا في مرضاه.</p>
+
+      <div class="stat-grid">
+        <div class="card stat-card reveal" style="--d:220">
+          <div class="stat-number"><span class="count" data-count="3" data-suffix=""> </span><span class="unit">ساعات</span></div>
+          <p class="stat-label">تُهدر يومياً لإدخال البيانات بدلاً من مراجعة المرضى</p>
+        </div>
+        <div class="card stat-card reveal" style="--d:320">
+          <div class="stat-number"><span class="count" data-count="40" data-suffix=""> </span><span class="unit">٪</span></div>
+          <p class="stat-label">من المواعيد تُهدر أو تُلغى بسبب الإدارة اليدوية الفوضوية</p>
+        </div>
+        <div class="card stat-card reveal" style="--d:420">
+          <div class="stat-number"><span class="count" data-count="80" data-suffix=""> </span><span class="unit">٪</span></div>
+          <p class="stat-label">من العيادات لا تزال تعتمد على السجلات الورقية</p>
+        </div>
+      </div>
+
+      <div class="gap-banner reveal" style="--d:540">
+        <strong>الفجوة الحقيقية:</strong>
+        <span>لا يوجد في السوق العربي منصة واحدة تجمع المواعيد + السجلات + الوصفات + المريض في مكان واحد.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 3 — SOLUTION ============ -->
+  <section class="slide" data-slide>
+    <div class="slide-inner">
+      <span class="eyebrow reveal" style="--d:0">الحل</span>
+      <h2 class="slide-title reveal" style="--d:80">منصة تحوّل الفوضى <span class="accent">إلى نظام رقمي</span></h2>
+      <p class="slide-sub reveal" style="--d:140">لإدارة العيادات الصغيرة تحوّل المواعيد والسجلات والوصفات إلى نظام رقمي منظم.</p>
+
+      <div class="solution-grid">
+        <div class="card solution-card reveal" style="--d:220">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg>
+          </div>
+          <h3>رقمنة عمليات العيادة</h3>
+          <p>استبدال العمليات اليدوية بنظام رقمي موحد للمواعيد والسجلات والوصفات.</p>
+        </div>
+        <div class="card solution-card reveal" style="--d:280">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg>
+          </div>
+          <h3>تمكين الطبيب</h3>
+          <p>لوحة تحكم واضحة لإدارة الجدول اليومي وملفات المرضى وسجل الوصفات.</p>
+        </div>
+        <div class="card solution-card reveal" style="--d:340">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M10 7h4M10 17h.01"/></svg>
+          </div>
+          <h3>تحسين تجربة المريض</h3>
+          <p>تطبيق موبايل بسيط لحجز المواعيد والوصول للوصفات في أي وقت.</p>
+        </div>
+        <div class="card solution-card reveal" style="--d:400">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+          </div>
+          <h3>ضمان سلامة البيانات</h3>
+          <p>تخزين وإدارة آمنة للبيانات الطبية الحساسة.</p>
+        </div>
+        <div class="card solution-card reveal" style="--d:460">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 11.5a8.4 8.4 0 01-1 4 8.5 8.5 0 01-7.5 4.5 8.4 8.4 0 01-4-1L3 20l1-5.5a8.4 8.4 0 01-1-4A8.5 8.5 0 0111 3a8.4 8.4 0 018.5 8.5z"/></svg>
+          </div>
+          <h3>تفعيل الاستشارات الطبية</h3>
+          <p>تقديم استفسارات طبية والحصول على رد الطبيب دون زيارة.</p>
+        </div>
+        <div class="card solution-card reveal" style="--d:520">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h3>تذكير بالمواعيد</h3>
+          <p>عند حجز المريض للموعد، ترسل له المنصة إشعاراً بالموعد.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 4 — TECH & FLOW ============ -->
+  <section class="slide" data-slide>
+    <div class="slide-inner">
+      <span class="eyebrow reveal" style="--d:0">التقنية</span>
+      <h2 class="slide-title reveal" style="--d:80">التقنيات المستخدمة <span class="accent">وسير العمل</span></h2>
+
+      <div class="two-col">
+        <div class="tech-list reveal" style="--d:200">
+          <div class="tech-item">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v12H4zM8 21h8M12 17v4"/></svg></div>
+            <div><b>Front-End</b><span>React · Tailwind CSS · HTML · CSS · JS — عبر VS Code</span></div>
+          </div>
+          <div class="tech-item">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+            <div><b>Back-End</b><span>ASP.NET Core 10 — عبر Swagger, Scalar, Visual Studio 2026</span></div>
+          </div>
+          <div class="tech-item">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M21 12h-3M6 12H3M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1M18.4 18.4l-2.1-2.1M7.7 7.7L5.6 5.6"/></svg></div>
+            <div><b>UI/UX</b><span>Figma</span></div>
+          </div>
+          <div class="tech-item">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+            <div><b>Mobile</b><span>Flutter — عبر VS Code</span></div>
+          </div>
+          <div class="tech-item">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h9l3 3v17H6z"/><path d="M9 10h6M9 14h6M9 18h4"/></svg></div>
+            <div><b>SRS &amp; User Story</b><span>موثقة عبر PDF</span></div>
+          </div>
+        </div>
+
+        <div class="flow-timeline reveal" style="--d:320">
+          <div class="flow-col">
+            <div class="flow-step" data-n="1"><b>SRS</b><span>توثيق كل متطلبات المشروع</span></div>
+            <div class="flow-step" data-n="2"><b>User Story</b><span>ترجمة كل متطلب لقصة مستخدم</span></div>
+            <div class="flow-step" data-n="3"><b>Backlog &amp; Epics</b><span>تجميع وترتيب الأولويات</span></div>
+            <div class="flow-step" data-n="4"><b>UI/UX Design</b><span>إنشاء الواجهات للمشروع</span></div>
+          </div>
+          <div class="flow-col">
+            <div class="flow-step" data-n="5"><b>Technical Breakdown</b><span>تجهيز الـ API</span></div>
+            <div class="flow-step" data-n="6"><b>Task Distribution</b><span>UI/UX، Front-End، Back-End، Mobile</span></div>
+            <div class="flow-step" data-n="7"><b>QA</b><span>اختبار البرمجيات المنفذة</span></div>
+            <div class="flow-step" data-n="8"><b>Deployment</b><span>نشر المشروع</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 5 — PRODUCT ============ -->
+  <section class="slide" data-slide>
+    <div class="slide-inner">
+      <span class="eyebrow reveal" style="--d:0">المنتج</span>
+      <h2 class="slide-title reveal" style="--d:80">كيف يعمل <span class="accent">طبيبي؟</span></h2>
+      <p class="slide-sub reveal" style="--d:140">موقع ويب احترافي وتطبيق موبايل يوفران تجربة سلسة لإدارة العيادات الصغيرة.</p>
+
+      <div class="split reveal" style="--d:240">
+        <div class="split-panel patient">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0EA5A4" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/></svg>
+            تطبيق المريض
+          </h3>
+          <ul class="feature-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>حجز الموعد واختيار الوقت المناسب</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>إشعار فوري بتأكيد أو تعديل الموعد</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>عرض السجل الطبي ووصفاته الكاملة</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>إرسال استشارة والرد من الطبيب</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>متابعة حالة الدفع والفواتير</li>
+          </ul>
+        </div>
+        <div class="split-panel doctor">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#138C9F" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+            لوحة تحكم الطبيب
+          </h3>
+          <ul class="feature-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>جدول المواعيد اليومي وقائمة الانتظار</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>الملف الطبي الكامل لكل مريض</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>إدارة المدفوعات والفواتير</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>استشارات داخلية مع المرضى</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 6 — WEB PLATFORM ============ -->
+  <section class="slide slide--platform" data-slide>
+    <div class="slide-inner">
+      <span class="eyebrow reveal" style="--d:0">المنصة</span>
+      <h2 class="slide-title reveal" style="--d:80"><span class="accent">منصة الويب</span> (React &amp; .NET)</h2>
+      <p class="slide-sub reveal" style="--d:140">واجهة ويب حديثة ومتكاملة تعرض تجربة المستخدم والوظائف الأساسية للمنصة بوضوح</p>
+
+      <div class="platform-gallery reveal" style="--d:240">
+        <div class="platform-card">
+          <img src="image/image-1.png" alt="واجهة الويب - الشاشة الرئيسية">
+        </div>
+        <div class="platform-card">
+          <img src="image/image-2.png" alt="واجهة الويب - إدارة المواعيد">
+        </div>
+        <div class="platform-card">
+          <img src="image/image-3.png" alt="واجهة الويب - إدارة المرضى">
+        </div>
+        <div class="platform-card">
+          <img src="image/image-4.png" alt="واجهة الويب - لوحة التحكم">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 7 — MOBILE APP ============ -->
+  <section class="slide slide--mobile" data-slide>
+    <div class="slide-inner">
+      <span class="eyebrow reveal" style="--d:0">الموبايل</span>
+      <h2 class="slide-title reveal" style="--d:80">تطبيق <span class="accent">طبيبي</span></h2>
+      <p class="slide-sub reveal" style="--d:140">تطبيق الموبايل يقدم تجربة حجز واستشارات ووصفات سهلة وسريعة بين المريض والطبيب.</p>
+
+      <div class="mobile-gallery reveal" style="--d:240">
+        <div class="media-card">
+          <img src="image/image-5.png" alt="تطبيق الموبايل - شاشة تسجيل الدخول">
+        </div>
+        <div class="media-card">
+          <img src="image/image-6.png" alt="تطبيق الموبايل - شاشة الحجز">
+        </div>
+        <div class="media-card">
+          <img src="image/image-7.png" alt="تطبيق الموبايل - شاشة المواعيد">
+        </div>
+        <div class="media-card">
+          <img src="image/image-8.png" alt="تطبيق الموبايل - شاشة الملف الشخصي">
+        </div>
+        <div class="media-card">
+          <img src="image/image-9.png" alt="تطبيق الموبايل - شاشة الوصفات الطبية">
+        </div>
+        <div class="media-card">
+          <img src="image/image-10.png" alt="تطبيق الموبايل - شاشة التنبيهات والإشعارات">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 8 — MARKET ============ -->
+  <section class="slide" data-slide>
+    <div class="slide-inner">
+      <span class="eyebrow reveal" style="--d:0">السوق المستهدف</span>
+      <h2 class="slide-title reveal" style="--d:80">سوق مثمر <span class="accent">ونقطة دخولنا مثالية</span></h2>
+
+      <div class="funnel reveal" style="--d:220">
+        <div class="funnel-row">
+          <span class="funnel-tag">TAM<br><small>السوق الكلي</small></span>
+          <div class="funnel-bar-track"><div class="funnel-bar" data-width="100">1500 عيادة في فلسطين × 10$/شهر</div></div>
+          <div class="funnel-value"><span class="num">$<span class="count" data-count="180">180</span>K</span><span class="cap">سنوياً</span></div>
+        </div>
+        <div class="funnel-row">
+          <span class="funnel-tag">SAM<br><small>السوق المتاح</small></span>
+          <div class="funnel-bar-track"><div class="funnel-bar" data-width="55">500 عيادة في قطاع غزة × 10$/شهر</div></div>
+          <div class="funnel-value"><span class="num">$<span class="count" data-count="60">60</span>K</span><span class="cap">سنوياً</span></div>
+        </div>
+        <div class="funnel-row">
+          <span class="funnel-tag">SOM<br><small>هدفنا الواقعي</small></span>
+          <div class="funnel-bar-track"><div class="funnel-bar" data-width="4">10 عيادات في منطقتنا × 10$/شهر</div></div>
+          <div class="funnel-value"><span class="num">$<span class="count" data-count="3.6">3.6</span>K</span><span class="cap">بعد 3 سنوات</span></div>
+        </div>
+      </div>
+
+      <p class="slide-sub reveal" style="--d:420">هدفنا الواقعي مبدئياً: 10 عيادات × 10$/شهر — إجمالي تقريبي بعد 3 سنوات ≈ $3,600.</p>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 7 — COMPETITION ============ -->
+  <section class="slide" data-slide>
+    <div class="slide-inner">
+      <span class="eyebrow reveal" style="--d:0">المنافسة</span>
+      <h2 class="slide-title reveal" style="--d:80">لماذا <span class="accent">طبيبي؟</span></h2>
+
+      <div class="compare">
+        <div class="card compare-col yes reveal" style="--d:220">
+          <h3>مع طبيبي</h3>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>سجلات رقمية آمنة ومنظمة</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>جدولة ذكية بلا تعارض مواعيد</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>تطبيق مريض سهل الاستخدام</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>تاريخ طبي كامل بنقرة واحدة</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>لوحة تحكم مالية شاملة</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>واجهات سهلة الاستخدام</li>
+          </ul>
+        </div>
+        <div class="card compare-col no reveal" style="--d:300">
+          <h3>بدون طبيبي</h3>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>سجلات ورقية — ضياع بيانات المرضى</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>تعارض مواعيد متكررة</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>صعوبة وصول المريض للطبيب المناسب</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>صعوبة مراجعة التاريخ الطبي</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>صعوبة مراجعة السجل الطبي</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 8 — MARKETING ============ -->
+  <section class="slide" data-slide>
+    <div class="slide-inner">
+      <span class="eyebrow reveal" style="--d:0">التسويق</span>
+      <h2 class="slide-title reveal" style="--d:80">كيف نصل إلى <span class="accent">150 عيادة في 3 سنوات؟</span></h2>
+      <p class="slide-sub reveal" style="--d:140">دخول تدريجي مبني على الثقة والنتائج القابلة للقياس.</p>
+
+      <div class="stage-track">
+        <div class="stage reveal" style="--d:220">
+          <div class="stage-dot">1</div>
+          <div class="card stage-card">
+            <span class="stage-year">Pilot · Q1–Q2 2026</span>
+            <h4>أثبت القيمة — 5 إلى 10 عيادات</h4>
+            <p>تشغيل تجريبي مع عيادات حقيقية وقياس رضا المستخدمين وتحسين المنتج.</p>
+          </div>
+        </div>
+        <div class="stage reveal" style="--d:300">
+          <div class="stage-dot">2</div>
+          <div class="card stage-card">
+            <span class="stage-year">Launch · Q2 2026</span>
+            <h4>انطلق بقوة — 25 عيادة</h4>
+            <p>حملة رقمية وشراكات مع جمعيات الأطباء والمراكز الطبية.</p>
+          </div>
+        </div>
+        <div class="stage reveal" style="--d:380">
+          <div class="stage-dot">3</div>
+          <div class="card stage-card">
+            <span class="stage-year">Scale · 2026</span>
+            <h4>تمدد إقليمياً — 50 عيادة</h4>
+            <p>التوسع لجميع مناطق قطاع غزة وإطلاق خطة ترويج عامة.</p>
+          </div>
+        </div>
+        <div class="stage reveal" style="--d:460">
+          <div class="stage-dot">4</div>
+          <div class="card stage-card">
+            <span class="stage-year">Dominate · 2029</span>
+            <h4>القيادة الإقليمية — 150 عيادة</h4>
+            <p>صيدليات + مختبرات + تطبيب عن بُعد.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 10 — CLOSING / NEEDS ============ -->
+  <section class="slide slide--closing" data-slide>
+    <div class="slide-inner">
+      <span class="eyebrow reveal" style="--d:0">ماذا نحتاج الآن؟</span>
+      <h2 class="slide-title reveal" style="--d:80">من MVP <span class="accent">إلى نسخة قابلة للنشر التجاري</span></h2>
+
+      <div class="cta-grid">
+        <div class="cta-item reveal" style="--d:200">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+          <p><b>شراكات دفع إلكتروني</b>دمج بوابات دفع حقيقية مثل Stripe.</p>
+        </div>
+        <div class="cta-item reveal" style="--d:250">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.5 20.5L3 13l7.5-7.5M21 13l-7.5 7.5"/></svg></div>
+          <p><b>ربط الوصفة بالصيدلية</b>إرسال الوصفة الرقمية مباشرة لصيدلية شريكة.</p>
+        </div>
+        <div class="cta-item reveal" style="--d:300">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v6L4 20h16L15 8V2M9 2h6"/></svg></div>
+          <p><b>نتائج المختبر</b>رفع وعرض نتائج التحاليل المخبرية مربوطة بملف المريض.</p>
+        </div>
+        <div class="cta-item reveal" style="--d:350">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 01-1 4 8.5 8.5 0 01-7.5 4.5 8.4 8.4 0 01-4-1L3 20l1-5.5a8.4 8.4 0 01-1-4A8.5 8.5 0 0111 3a8.4 8.4 0 018.5 8.5z"/></svg></div>
+          <p><b>تفعيل المحادثات</b>بين الطبيب والمريض، والطبيب والأدمن.</p>
+        </div>
+        <div class="cta-item reveal" style="--d:400">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 3a2 2 0 01-.4 2.1L8 10.1a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c1 .3 2 .5 3 .6a2 2 0 011.7 2z"/></svg></div>
+          <p><b>تذكيرات SMS</b>ضمان وصول تذكير الموعد لكل المرضى، وتقليل نسبة الغياب.</p>
+        </div>
+        <div class="cta-item reveal" style="--d:450">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 3v8M8 3v8M3 12h18"/></svg></div>
+          <p><b>إضافة الصيدليات والمختبرات</b>توسيع المنصة لتشمل شركاء جدد.</p>
+        </div>
+      </div>
+
+      <p class="closing-tagline reveal" style="--d:560">طبيبي: <span class="accent">من سجلات ورقية</span> إلى رعاية صحية رقمية منظمة.</p>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 11 — TEAM ============ -->
+  <section class="slide" data-slide>
+    <div class="slide-inner">
+      <span class="eyebrow reveal" style="--d:0">الفريق</span>
+      <h2 class="slide-title reveal" style="--d:80">Tabibi <span class="accent">Project Team</span></h2>
+
+      <div class="team-grid">
+        <div class="card team-card reveal" style="--d:200"><div class="team-avatar"><img src="image/mazen.png" alt="مازن حازم أبو سيف"></div><b>مازن حازم أبو سيف</b><span>Team Leader · QA</span></div>
+        <div class="card team-card reveal" style="--d:240"><div class="team-avatar"><img src="image/omar.png" alt="عمر محمد حمد"></div><b>عمر محمد حمد</b><span>Backend Developer</span></div>
+        <div class="card team-card reveal" style="--d:280"><div class="team-avatar"><img src="image/abdullah.png" alt="عبدالله المناعمة"></div><b>عبدالله المناعمة</b><span>Front-end Developer</span></div>
+        <div class="card team-card reveal" style="--d:320"><div class="team-avatar"><img src="image/islam.png" alt="إسلام حمدان حسن"></div><b>إسلام حمدان حسن</b><span>Front-end Developer</span></div>
+        <div class="card team-card reveal" style="--d:360"><div class="team-avatar"><img src="image/basel.png" alt="باسل محمود جابر"></div><b>باسل محمود جابر</b><span>UI/UX Designer</span></div>
+        <div class="card team-card reveal" style="--d:400"><div class="team-avatar"><img src="image/amin.png" alt="أمين النواجحة"></div><b>أمين النواجحة</b><span>Mobile Developer</span></div>
+        <div class="card team-card reveal" style="--d:440"><div class="team-avatar"><img src="image/jaber.png" alt="جابر عبدالله"></div><b>جابر عبدالله</b><span>Front-end Developer</span></div>
+        <div class="card team-card reveal" style="--d:480"><div class="team-avatar"><img src="image/tariq.png" alt="طارق وشاح"></div><b>طارق وشاح</b><span>UI/UX Designer</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 12 — Q&A ============ -->
+  <section class="slide slide--qa" data-slide>
+    <div class="qa-pulse">
+      <svg viewBox="0 0 1000 70" preserveAspectRatio="none">
+        <path fill="none" stroke="#0EA5A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          d="M0,35 L160,35 L195,35 L215,8 L240,60 L262,35 L300,35 L500,35 L525,35 L545,12 L568,58 L590,35 L630,35 L1000,35"/>
+      </svg>
+    </div>
+    <div class="slide-inner">
+      <div class="qa-mark reveal" style="--d:0">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9.09 9a3 3 0 015.83 1c0 2-3 2.5-3 4.5"/>
+          <circle cx="12" cy="18.5" r=".6" fill="currentColor" stroke="none"/>
+          <circle cx="12" cy="12" r="10"/>
+        </svg>
+      </div>
+      <span class="qa-kicker reveal" style="--d:120">Q &amp; A</span>
+      <h2 class="qa-title reveal" style="--d:220">أسئلة الجمهور</h2>
+      <p class="qa-sub reveal" style="--d:320">نرحّب بأسئلتكم وملاحظاتكم — دعونا نناقش كيف يمكن لـ"طبيبي" أن يخدم عيادتكم.</p>
+
+      <div class="qa-contacts reveal" style="--d:420">
+        <span class="qa-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
+          mazan.seif@gmail.com
+        </span>
+        <span class="qa-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 3a2 2 0 01-.4 2.1L8 10.1a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c1 .3 2 .5 3 .6a2 2 0 011.7 2z"/></svg>
+          +9720597081983 (WhatsApp)
+        </span>
+        <span class="qa-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 12h8M12 8v8"/></svg>
+          TAQAT IT Incubator
+        </span>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ============ CHROME ============ -->
+<div class="chrome">
+  <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+  <div class="brandmark"><span class="pulse-dot"></span>TABIBI</div>
+  <div class="slide-counter" id="slideCounter"><b>01</b> / 10</div>
+
+  <button class="fullscreen-btn" id="fullscreenBtn" title="ملء الشاشة" aria-label="ملء الشاشة">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 00-2 2v3M16 3h3a2 2 0 012 2v3M8 21H5a2 2 0 01-2-2v-3M16 21h3a2 2 0 002-2v-3"/></svg>
+  </button>
+
+  <div class="nav-arrows">
+    <button class="nav-btn" id="prevBtn" aria-label="السابق">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
+    <div class="dots" id="dots"></div>
+    <button class="nav-btn" id="nextBtn" aria-label="التالي">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+    </button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
