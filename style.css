@@ -45,6 +45,7 @@ body {
   height: 100%;
   background: var(--ink);
   overflow: hidden;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -99,6 +100,7 @@ button {
   position: relative;
   width: 100vw;
   height: 100vh;
+  height: 100svh;
   height: 100dvh;
   overflow: hidden;
   perspective: 1800px;
@@ -151,6 +153,7 @@ button {
   flex-direction: column;
   justify-content: center;
   gap: clamp(18px, 3vh, 36px);
+  overflow-wrap: anywhere;
 }
 
 /* Reveal-on-enter elements */
@@ -575,7 +578,7 @@ filter: brightness(0) invert(1);}
 
 .cover-foot {
   position: absolute;
-  bottom: calc(var(--pad-y) - 20px);
+  bottom: calc(var(--pad-y) - 40px);
   right: var(--pad-x);
   left: var(--pad-x);
   display: flex;
@@ -663,6 +666,7 @@ filter: brightness(0) invert(1);}
 
 .platform-gallery {
   grid-template-columns: repeat(2, minmax(280px, 1fr));
+  width: min(100%, 700px);
 }
 
 .mobile-gallery {
@@ -758,7 +762,10 @@ filter: brightness(0) invert(1);}
   padding: 12px;
   box-shadow: 0 20px 45px rgba(11, 18, 32, 0.08);
   overflow: hidden;
-  min-height: 300px;
+  min-height: 0;
+}
+.slide--platform .platform-card {
+  min-height: 0;
 }
 
 .platform-card img {
@@ -769,6 +776,9 @@ filter: brightness(0) invert(1);}
   object-fit: cover;
   border-radius: 14px;
   background: transparent;
+}
+.platform-card--wide {
+  grid-column: 1 / -1;
 }
 
 .mobile-gallery .media-card img {
@@ -792,6 +802,10 @@ filter: brightness(0) invert(1);}
   .platform-card img,
   .media-card img {
     min-height: 220px;
+  }
+  .slide--platform .platform-card,
+  .slide--platform .platform-card img {
+    min-height: 0;
   }
 }
 .gap-banner strong {
@@ -895,7 +909,7 @@ filter: brightness(0) invert(1);}
 
 .split {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -913,6 +927,9 @@ filter: brightness(0) invert(1);}
 .split-panel.doctor {
   background: var(--blue-soft);
 }
+.split-panel.admin {
+  background: #fff1ed;
+}
 .split-panel h3 {
   font-size: 20px;
   display: flex;
@@ -928,7 +945,7 @@ filter: brightness(0) invert(1);}
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--blue-primary);
   line-height: 1.6;
   font-weight: 900;
@@ -944,8 +961,146 @@ filter: brightness(0) invert(1);}
   color: var(--blue-primary);
 }
 
-/* ==========================================================================
-   SLIDE 6 — MARKET
+.comparison-story {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+  padding: 16px 20px;
+  border-inline-start: 4px solid var(--teal);
+  border-radius: var(--radius-md);
+  background: var(--ink);
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.comparison-story strong {
+  flex: 0 0 auto;
+  color: var(--amber);
+  font-family: var(--f-display);
+}
+.comparison-story span {
+  color: rgba(255, 255, 255, 0.82);
+}
+.growth-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  background: var(--teal-soft);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+.growth-note strong {
+  color: var(--teal);
+  font-family: var(--f-display);
+}
+
+/* ========================================================================== 
+   SLIDE 6 — PLATFORM WORKFLOW
+   ========================================================================== */
+
+.slide--workflow .slide-inner {
+  justify-content: center;
+  align-items: center;
+}
+.slide--workflow .slide-title,
+.slide--workflow .slide-sub {
+  text-align: center;
+  max-width: 820px;
+  margin-inline: auto;
+}
+.workflow-board {
+  position: relative;
+  width: min(100%, 1080px);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 18px 50px rgba(11, 18, 32, 0.08);
+}
+.workflow-lane {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  align-items: center;
+  min-height: 68px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+.patient-lane { background: var(--teal-soft); }
+.doctor-lane { background: var(--blue-soft); }
+.secretary-lane { background: #fff8e7; }
+.admin-lane { background: #fff1ed; }
+.workflow-role {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink);
+  font-size: 17px;
+}
+.role-icon {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+  font-weight: 900;
+}
+.workflow-steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+}
+.workflow-steps span {
+  flex: 1;
+  min-width: 0;
+  padding: 9px 6px;
+  background: #fff;
+  border: 1px solid rgba(11, 18, 32, 0.14);
+  border-radius: 6px;
+  text-align: center;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+.workflow-steps i {
+  flex: 0 0 auto;
+  color: var(--teal);
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 900;
+}
+.workflow-hub {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: min(90%, 500px);
+  margin-top: -4px;
+  padding: 10px 18px;
+  background: var(--ink);
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+}
+.workflow-hub b { font-size: 17px; }
+.workflow-hub span { color: rgba(255, 255, 255, 0.75); font-size: 12px; }
+
+/* ========================================================================== 
+   SLIDE 7 — MARKET 
    ========================================================================== */
 
 .funnel {
@@ -1350,6 +1505,19 @@ filter: brightness(0) invert(1);}
   .compare {
     grid-template-columns: 1fr;
   }
+  .workflow-lane {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .workflow-steps {
+    flex-wrap: wrap;
+  }
+  .workflow-steps span {
+    flex: 1 1 42%;
+  }
+  .workflow-steps i {
+    display: none;
+  }
   .stat-grid,
   .solution-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1369,9 +1537,16 @@ filter: brightness(0) invert(1);}
   .cover-title-ar {
     font-size: clamp(32px, 10vw, 60px);
   }
+  .slide-inner {
+    gap: clamp(14px, 2.5vh, 24px);
+  }
 }
 
 @media (max-width: 620px) {
+  :root {
+    --pad-x: 16px;
+    --pad-y: 76px;
+  }
   .stat-grid,
   .solution-grid {
     grid-template-columns: 1fr;
@@ -1386,10 +1561,111 @@ filter: brightness(0) invert(1);}
   .slide-inner {
     gap: 14px;
     justify-content: flex-start;
-    padding-top: 70px;
+    padding-top: 68px;
+    padding-bottom: calc(88px + env(safe-area-inset-bottom));
     overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
   .deck {
     overflow-y: auto;
+  }
+  .slide-counter {
+    top: 12px;
+    left: 16px;
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+  .brandmark {
+    top: 15px;
+    right: 16px;
+    font-size: 12px;
+  }
+  .nav-arrows {
+    top: auto;
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 10px;
+  }
+  .nav-btn {
+    width: 38px;
+    height: 38px;
+  }
+  .dots {
+    gap: 5px;
+  }
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+  .cover-foot {
+    right: var(--pad-x);
+    left: var(--pad-x);
+    bottom: calc(82px + env(safe-area-inset-bottom));
+    flex-wrap: wrap;
+    font-size: 13px;
+  }
+  .cover-desc {
+    font-size: clamp(17px, 5vw, 22px);
+  }
+  .slide-sub {
+    font-size: 16px;
+  }
+  .workflow-board {
+    padding: 10px;
+    gap: 7px;
+  }
+  .workflow-lane {
+    padding: 8px;
+  }
+  .workflow-role {
+    font-size: 16px;
+  }
+  .workflow-steps span {
+    flex-basis: 100%;
+    font-size: 13px;
+  }
+  .workflow-hub {
+    width: 100%;
+  }
+  .feature-list li {
+    font-size: 16px;
+  }
+  .comparison-story,
+  .growth-note {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 14px;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-avatar {
+    width: 104px;
+    height: 104px;
+  }
+  .cta-item {
+    padding: 14px;
+  }
+  .cta-item p,
+  .cta-item b {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .cover-kicker {
+    font-size: 10px;
+  }
+  .cover-foot {
+    font-size: 11px;
+  }
+  .slide-title {
+    font-size: 25px;
+  }
+  .slide-sub {
+    font-size: 14px;
   }
 }
